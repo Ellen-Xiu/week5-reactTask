@@ -46,7 +46,7 @@ function SingleProduct() {
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>) : 
-    (<div className="contaner mt-3">      
+    (<div className="contaner my-4">      
       <div className="card mx-auto" style={{width: '300px'}}>
         <img src={product.imageUrl} className="card-img-top" alt="圖片" style={{height: '300px'}}/>
         <div className="card-body d-flex flex-column">
