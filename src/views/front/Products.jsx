@@ -38,7 +38,7 @@ function Products() {
     // }
   }
   return(
-    <div className="container mt-3">
+    <div className="container my-4">
       <div className="row">
         {products.map((product) => {
           return (

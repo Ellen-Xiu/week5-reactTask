@@ -60,8 +60,8 @@ function Cart() {
   }   
 
   return(
-    <div className="container">
-      <h2>購物車列表</h2>
+    <div className="container my-4">
+      <h2 className="text-center">購物車列表</h2>
       <div className="text-end mt-4 mb-4">
         <button type="button" className="btn btn-danger" onClick={()=>{delAllCart()}}>
           清空購物車
