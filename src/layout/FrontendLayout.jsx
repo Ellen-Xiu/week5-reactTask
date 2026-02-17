@@ -1,17 +1,17 @@
-import { Link, Outlet } from "react-router"
+import { NavLink, Outlet } from "react-router"
 function FrontendLayout() {
   return (
     <>
       <header>
-        <ul className="nav bg-warning-subtle justify-content-center fw-bold py-3 fs-5">
+        <ul className="nav bg-warning-subtle justify-content-center py-3 fs-5">
           <li className="nav-item">
-            <Link className="nav-link text-success" to="/">首頁</Link>
+            <NavLink className={({isActive}) => { return isActive ? "nav-link text-primary fw-bold" : "nav-link text-success fw-bold"}} to="/">首頁</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link text-success" to="/product">商品列表</Link>
+            <NavLink className={({isActive}) => { return isActive ? "nav-link text-primary fw-bold" : "nav-link text-success fw-bold"}} to="/product">商品列表</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link text-success" to="/cart">購物車</Link>
+            <NavLink className={({isActive}) => { return isActive ? "nav-link text-primary fw-bold" : "nav-link text-success fw-bold"}} to="/cart">購物車</NavLink>
           </li>
         </ul>
       </header>
